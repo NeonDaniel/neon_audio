@@ -64,6 +64,9 @@ setup(
     license='NeonAI License v1.0',
     packages=find_packages(),
     install_requires=get_requirements("requirements.txt"),
+    extras_require={
+        "backends": get_requirements("audio_backends.txt")
+    },
     zip_safe=True,
     classifiers=[
         'Intended Audience :: Developers',
